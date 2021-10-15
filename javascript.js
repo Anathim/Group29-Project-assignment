@@ -1,5 +1,5 @@
 function formValidation() {
-    var password = document.index.password;
+    var password = document.login.password;
     var phone = document.registration.phone;
     var email = document.registration.email;
     var password = document.registration.password;
@@ -49,20 +49,19 @@ function formValidation() {
             return false;
         }
     }
-    
+
     function phone(text)
-{
-  var phone = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
-  if(text.value.match(phone))
-     {
-	   return true;
-	 }
-   else
-     {
-	   alert("Not a valid Phone Number");
-	   return false;
-     }
-}
+    {
+        var phone = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
+        if (text.value.match(phone))
+        {
+            return true;
+        } else
+        {
+            alert("Not a valid Phone Number");
+            return false;
+        }
+    }
 }
 
 
